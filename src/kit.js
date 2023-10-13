@@ -89,7 +89,7 @@ function spawn(command, params) {
 function format(prettierPath) {
   const prettierConfigPath = path.join(process.cwd(), "/prettier.config.js");
   if (prettierPath && fs.pathExistsSync(prettierConfigPath)) {
-    spawn("prettier", ["--config", prettierConfigPath, "--write", prettierPath]);
+    spawn("npx", ["prettier", "--config", prettierConfigPath, "--write", prettierPath]);
   }
 }
 
