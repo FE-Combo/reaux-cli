@@ -1,11 +1,18 @@
 [![npm version](https://img.shields.io/npm/v/reaux-cli.svg?style=flat)](https://www.npmjs.com/package/reaux-cli)
 
-## reaux.config.js
+## reaux-cli
+通过命令行创建 reaux 应用程序
 
-- baseConfig: (config)=>config
-  - prot: 端口号
-  - entry: 入口
-  - htmlTemplate: html 模板
-- webpackDevConfig: (config)=>config 配置同 webpack config
-- webpackProdConfig: (config)=>config 配置同 webpack config
-- devServerConfig: (config)=>config 配置同 webpack-dev-server
+### 安装
+```bash
+yarn add reaux-cli -g
+```
+
+### 使用
+```bash
+rc init <project-name> ## 创建项目
+rc add <module-name> ## 创建模块
+rc component <component-name> ## 创建组件
+rc state ## 更新全局状态
+rc download <source-url> <destination-path> ## 下载资源
+```

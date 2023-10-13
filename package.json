@@ -1,36 +1,34 @@
 {
   "name": "reaux-cli",
   "version": "0.0.1",
-  "description": "",
+  "description": "Create reaux app through the command line.",
   "bin": {
-    "rc": "src/bin.js"
+    "rc": "./src/index.js"
   },
   "scripts": {
-    "rc": "node src/bin.js"
+    "rc": "node ./src/index.js",
+    "prettier": "prettier --write ./src/*",
+    "release": "standard-version",
+    "release:beta": "standard-version --prerelease beta",
+    "release:alpha": "standard-version --prerelease alpha",
+    "release:major": "standard-version --release-as major",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch"
   },
   "author": "vocoWone",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^14.6.0",
-    "commander": "^6.2.0",
-    "file-loader": "4.0.0",
-    "fork-ts-checker-webpack-plugin": "1.3.7",
-    "html-webpack-plugin": "^4.3.0",
-    "optimize-css-assets-webpack-plugin": "5.0.3",
-    "prettier": "2.0.5",
-    "terser-webpack-plugin": "^3.0.6",
-    "ts-loader": "6.0.4",
-    "tslib": "1.10.0",
-    "typescript": "3.9.5",
-    "webpack": "4.35.3",
+    "axios": "^0.20.0",
+    "chalk": "^4.1.0",
+    "commander": "^6.1.0",
+    "download-git-repo": "^3.0.2",
     "fs-extra": "^9.0.1",
-    "webpack-dev-server": "^3.11.0"
+    "inquirer": "^7.3.3",
+    "prettier": "^2.1.2",
+    "shelljs": "^0.8.4"
   },
   "devDependencies": {
-    "@types/react": "^16.9.11",
-    "@types/react-dom": "^16.9.8",
     "eslint": "^7.10.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.11.0"
+    "standard-version": "^9.5.0"
   }
 }
