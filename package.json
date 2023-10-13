@@ -1,6 +1,6 @@
 {
   "name": "reaux-cli",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Create reaux app through the command line.",
   "bin": {
     "rc": "./src/index.js"
