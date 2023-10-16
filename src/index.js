@@ -34,11 +34,11 @@ commander
   });
 
 commander
-  .command("comp <componentName>")
+  .command("comp <componentName> [destinationPath]")
   .description("Create a new component quickly")
-  .action((componentName) => {
+  .action((componentName, destinationPath) => {
     errorIntercept(async function () {
-      await addComp(componentName);
+      await addComp(componentName, destinationPath);
     });
   });
 

@@ -12,7 +12,7 @@ yarn add reaux-cli -g
 ```bash
 rc init <project-name> ## 创建项目
 rc module <module-name> ## 创建模块
-rc comp <component-name> ## 创建组件
+rc comp <component-name> [destination-path] ## 创建组件
 rc state ## 更新全局状态
 rc download <source-url> <destination-path> ## 下载资源
 ```
