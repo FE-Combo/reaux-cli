@@ -23,7 +23,7 @@ function create(type, name) {
     const package = fs
       .readFileSync(packagePath)
       .toString()
-      .replace(new RegExp(getRepoName(name), "g"), name);
+      .replace(new RegExp(getRepoName(type), "g"), name);
     fs.writeFileSync(packagePath, package);
   });
   console.info(chalk.green("Init Project successfully"));

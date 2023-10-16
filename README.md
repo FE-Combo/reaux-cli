@@ -5,7 +5,7 @@
 
 ### 安装
 ```bash
-yarn add reaux-cli -g
+npm i reaux-cli -g
 ```
 
 ### 使用

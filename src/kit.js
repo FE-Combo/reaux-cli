@@ -1,5 +1,4 @@
 const process = require("process");
-const chalk = require("chalk");
 const shelljs = require("shelljs");
 const fs = require("fs-extra");
 const inquirer = require("inquirer");
