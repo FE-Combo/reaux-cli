@@ -5,7 +5,7 @@ interface Props {}
 
 const Index: FC<Props> = ()=> {
     return (
-        <div className={styles.contianer}>init component</div>
+        <div className={styles.container}>init component</div>
     )
 }
 
