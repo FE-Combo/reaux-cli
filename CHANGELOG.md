@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.1.4 (2024-07-02)
+
+
+### Features
+
+* Added destination path option to the 'rc comp' command. ([95bc249](https://github.com/FE-Combo/reaux-cli/commit/95bc24960b2b17abfe8725cd4e9fffcb36643d7f))
+
 ### [1.1.3](https://github.com/vocoWone/reaux-cli/compare/v1.1.2...v1.1.3) (2023-11-03)
 
 ### [1.1.2](https://github.com/vocoWone/reaux-cli/compare/v1.1.1...v1.1.2) (2023-10-23)
